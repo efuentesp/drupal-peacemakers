@@ -1,0 +1,14 @@
+; $Id$
+name = Educational Organization UI
+description = Exposes a default UI for Educational Organization through profile edit forms and default Views.
+package = Peacemakers
+core = 7.x
+
+dependencies[] = contextual
+dependencies[] = field_ui
+dependencies[] = peacemakers_ui
+dependencies[] = peacemakers_educational_organization
+dependencies[] = views
+
+; Base module files
+files[] = peacemakers_educational_organization_ui.module

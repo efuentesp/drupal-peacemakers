@@ -1,0 +1,8 @@
+<?php
+
+/**
+ * @file
+ * Defines the educational organization profile entity and API functions to manage 
+ * educational organizations and interect with them.
+ */
+ 

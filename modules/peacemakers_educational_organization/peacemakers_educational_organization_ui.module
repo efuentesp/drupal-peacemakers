@@ -1,0 +1,24 @@
+<?php
+// $Id$
+
+/**
+* @file
+*/
+
+/**
+* Implements hook_menu().
+*/
+function educational_organization_ui_menu() {
+  $items = array();
+
+  // Note: admin/commerce/customer-profiles is defined by a default View.
+
+  // Add a customer profile.
+  $items['admin/commerce/customer-profiles/add'] = array(
+    'title' => 'Add a customer profile',
+    'description' => 'Add a new customer profile.',
+    'page callback' => 'commerce_customer_ui_customer_profile_add_page',
+    'access callback' => 'commerce_customer_ui_customer_profile_add_any_access',
+    'weight' => 10,
+    'file' => 'includes/commerce_customer_ui.profiles.inc',
+  );

@@ -1,0 +1,45 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ * Defines menu items common to the various Drupal Peacemakers UI modules.
+ */
+
+/**
+ * Implements hook_helkp().
+ */
+//function peacemakers_ui_help($path, $arg) {
+  
+//}
+
+/**
+ * Implements hook_menu().
+ */
+function peacemakers_ui_menu() {
+	$items = array();
+	
+	// Top level "Peacemakers" container.
+	$items['admin/peacemakers'] = array(
+		'title' => 'Peacemakers',
+		'description' => 'Administer your Peacemakers site.',
+		'page callback' => 'system_admin_menu_block_page',
+		'access arguments' => array('access administration pages'),
+		'file path' => drupal_get_path('module', 'system'),
+		'file' => 'system.admin.inc',
+		'weight' => -7,
+  );
+  
+  $items['admin/peacemakers/config'] = array(
+		'title' => 'Configuration',
+		'description' => 'Configure settings and business rules for your peacemakers site.',
+		'page callback' => 'system_admin_menu_block_page',
+		'access arguments' => array('access administration pages'),
+		'type' => MENU_NORMAL_ITEM,
+		'weight' => 10,
+		'file path' => drupal_get_path('module', 'system'),
+		'file' => 'system.admin.inc',
+  );
+  
+  return $items;
+}

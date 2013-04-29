@@ -1,0 +1,7 @@
+; $Id$
+name = Peacemakers
+description = "Defines features and functions common to the Peacemakers modules."
+package = Peacemakers
+core = 7.x
+files[] = peacemakers.module
+

@@ -1,0 +1,11 @@
+; $Id$
+name = Educational Organization
+description = "Defines the Educational Organization entity with Address Field integration."
+package = Peacemakers
+dependencies[] = addressfield
+dependencies[] = peacemakers
+core = 7.x
+
+files[] = educational_organization.module
+files[] = educational_organization.install
+files[] = educational_organization.admin.inc

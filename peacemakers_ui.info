@@ -1,0 +1,7 @@
+; $Id$
+name = Peacemakers UI
+description = "Defines menu items common to the various Drupal Peacemakers UI modules."
+package = Peacemakers
+dependencies[] = peacemakers
+core = 7.x
+files[] = peacemakers_ui.module
